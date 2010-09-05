@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<image>
+			<link>http://zdrojak.root.cz/</link>
+			<title>Zdroják</title>
+			<url>http://i.iinfo.cz/z/rss-88x31.gif</url>
+			<width>88</width>
+			<height>31</height>
+		</image>
+		<title>Zdroják - články</title>
+		<link>http://zdrojak.root.cz/clanky/</link>
+		<description>Zdroják - tvorba webových stránek a aplikací</description>
+		<language>cs</language>
+		<pubDate>Thu, 02 Sep 2010 22:00:00 GMT</pubDate>
+		<item>
+			<title>Co zaujalo Jana Koderu?</title>
+			<link>http://zdrojak.root.cz/clanky/co-zaujalo-jana-koderu/</link>
+			<description>Proč žaluje Oracle Google kvůli Androidu, jaká je marže Amazonu u cloudových služeb nebo kde lze snadno a rychle zakládat startupy – to jsou jen některá témata, která zaujala Jana Koderu a o která se s námi přišel podělit. Jan Kodera je spoluautorem služby Abakowiki a znáte jej i jako propagátora SaaS.</description>
+<author>redakce@zdrojak.cz (Zdroják: Redakce)</author>			<pubDate>Thu, 02 Sep 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/co-zaujalo-jana-koderu/</guid>
+		</item>
+		<item>
+			<title>Nechte uživatele odejít...</title>
+			<link>http://zdrojak.root.cz/clanky/nechte-uzivatele-odejit/</link>
+			<description>Většina provozovatelů webů se stará hlavně o to, aby uživatelé přišli a aby zůstali. To, že odejdou, je pro ně noční můrou, a myšlenka na to, že by se tak mohlo stát, je děsí. Snaží se uživatelům v odchodu všemožně nepřímo bránit a představa, že by měli odchod usnadnit, je pro ně dokonale absurdní.</description>
+<author>redakce@zdrojak.cz (Zdroják: Martin Malý)</author>			<pubDate>Wed, 01 Sep 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/nechte-uzivatele-odejit/</guid>
+		</item>
+		<item>
+			<title>Scukařina, žádná dřina - díl třetí: Djangová je náš táta</title>
+			<link>http://zdrojak.root.cz/clanky/scukarina-zadna-drina-dil-treti-djangova-je-nas-tata/</link>
+			<description>V třetím díle Scukařiny vám mladý poutník Scuk dot cz představí účinný nástroj na hubení dotěrného hmyzu, odhalí temné denormalizační praktiky a jako dezert nám naservíruje špetku Javascriptu, map a geografie. No to bude vzrůšo! Předpokládáme, že znáte hlavní postavu a víte, kdo je vrah. Pokud ne, navštivte prosím předchozí díl!</description>
+<author>redakce@zdrojak.cz (Zdroják: Michal Valoušek)</author>			<pubDate>Tue, 31 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/scukarina-zadna-drina-dil-treti-djangova-je-nas-tata/</guid>
+		</item>
+		<item>
+			<title>Microsoftí lízátka pro začátečníky: Šance pro boj s PHP nebo krok zpět?</title>
+			<link>http://zdrojak.root.cz/clanky/microsofti-lizatka-pro-zacatecniky-sance-pro-boj-s-php-nebo-krok-zpet/</link>
+			<description>Poslední dobou se doslova roztrhl pytel se snahami Microsoftu přitáhnout ke své vývojové platformě nové, zejména neprofesionální a začínající vývojáře. Je to dobře, nebo špatně? A má Microsoft šanci na úspěch? Nad těmito otázkami se dnes zamýšlí v rubrice Subjektivně Michal Valášek.</description>
+<author>redakce@zdrojak.cz (Zdroják: Michal Valášek)</author>			<pubDate>Mon, 30 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/microsofti-lizatka-pro-zacatecniky-sance-pro-boj-s-php-nebo-krok-zpet/</guid>
+		</item>
+		<item>
+			<title>Václav Stoupa: WebExpo je můj startup</title>
+			<link>http://zdrojak.root.cz/clanky/vaclav-stoupa-webexpo-je-muj-startup/</link>
+			<description>Václav Stoupa je programátor, zakládající člen PHP Group a organizátor řady akcí pro programátory. V posledních letech je jeho jméno synonymem pro největší akci svého druhu v ČR – totiž WebExpo. To se letos koná už potřetí. Je tedy logické, že se rozhovor s Vaškem bude točit právě okolo WebExpa.</description>
+<author>redakce@zdrojak.cz (Zdroják: Martin Malý)</author>			<pubDate>Sun, 29 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/vaclav-stoupa-webexpo-je-muj-startup/</guid>
+		</item>
+		<item>
+			<title>Co zaujalo Jana Řezáče?</title>
+			<link>http://zdrojak.root.cz/clanky/co-zaujalo-jana-rezace/</link>
+			<description>Jan Řezáč je jeden z nejvýraznějších mladých webdesignérů – kromě vytváření webů a konzultací publikuje své postřehy a připomínky k webdesignu na vlastním blogu, odkud jej možná znáte pod přezdívkou „Filosof“. Dnes se s námi podělí o zajímavosti, které jej v poslední době zaujaly – a řeč bude o jídle, hudbě i knihách!</description>
+<author>redakce@zdrojak.cz (Zdroják: Redakce)</author>			<pubDate>Thu, 26 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/co-zaujalo-jana-rezace/</guid>
+		</item>
+		<item>
+			<title>Doctrine 2: načítání, ukládání a mazání</title>
+			<link>http://zdrojak.root.cz/clanky/doctrine-2-nacitani-ukladani-a-mazani/</link>
+			<description>Seriál o novinkách, které pro vývojáře v PHP přináší databázová knihovna (ORM) Doctrine 2, pokračuje. V ukázkách minulých dílů jsme se letmo dotkli Entity Manageru. Dnes se na něj podíváme podrobněji a ukážeme si základní způsoby, jak své entity načítat, ukládat a mazat.</description>
+<author>redakce@zdrojak.cz (Zdroják: Jan Tichý)</author>			<pubDate>Wed, 25 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/doctrine-2-nacitani-ukladani-a-mazani/</guid>
+		</item>
+		<item>
+			<title>Scukařina, žádná dřina - díl druhý: Django je naše máma</title>
+			<link>http://zdrojak.root.cz/clanky/scukarina-zadna-drina-dil-druhy-django-je-nase-mama/</link>
+			<description>V druhém díle Scukopříběhu se zaměříme na praktické momenty vývoje v Djangu. Představíme si sehranou trojici z vývojové laboratoře, zajedeme s databází k moři a nakonec lusknutím prstu připravíme vašemu klientovi velké administrační překvapení. Vše v článku, stačí jen kliknout a číst.</description>
+<author>redakce@zdrojak.cz (Zdroják: Michal Valoušek)</author>			<pubDate>Tue, 24 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/scukarina-zadna-drina-dil-druhy-django-je-nase-mama/</guid>
+		</item>
+		<item>
+			<title>Webdesignérův průvodce po HTML5: Shrnutí a rozhrnutí</title>
+			<link>http://zdrojak.root.cz/clanky/webdesigneruv-pruvodce-po-html5-shrnuti-a-rozhrnuti/</link>
+			<description>Seriál o novinkách, které přináší technologie HTML5 a na které se mohou vývojáři webů a webových aplikací těšit (nebo je už i používat), má už přes deset dílů. Je tedy nejvyšší čas na drobnou rekapitulaci, shrnutí probraného a určení témat do dalších dílů. A k tomu dostanete jeden drobný dárek od Marka Pilgrima.</description>
+<author>redakce@zdrojak.cz (Zdroják: Martin Malý)</author>			<pubDate>Mon, 23 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/webdesigneruv-pruvodce-po-html5-shrnuti-a-rozhrnuti/</guid>
+		</item>
+		<item>
+			<title>Kometa přináší web v reálném čase</title>
+			<link>http://zdrojak.root.cz/clanky/kometa-prinasi-web-v-realnem-case/</link>
+			<description>Real-time web (nebo též česky „web v reálném čase“) je podle odhadů analytiků „buzzwordem zítřka“. Budete se s ním setkávat čím dál víc, jak se postupy R-T webu budou stávat běžnějšími. Pojďme se podívat na jednu technologii, která je s realtime webem často spojována, a která stála např. za Google Wave.</description>
+<author>redakce@zdrojak.cz (Zdroják: Martin Malý)</author>			<pubDate>Sun, 22 Aug 2010 22:00:00 GMT</pubDate>
+			<guid isPermaLink="true">http://zdrojak.root.cz/clanky/kometa-prinasi-web-v-realnem-case/</guid>
+		</item>
+	</channel>
+</rss>
