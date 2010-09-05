@@ -12,11 +12,13 @@ NEWS_SOURCES = (
     { 'name': 'arstechnica',
       'name_verbose': 'ars technica',
       'url': 'http://arstechnica.com/',
+      #'max_items': 3,
+      'continuations': lambda art: art.find(".pager li a"),
       'selectors': {
 	      'stories': '#all-stories .story',
           'title': 'h2',
           'teaser': '.teaser',
-          'link': '.read_more_link',
+          'link': '.read-more-link a',
           'content': '#story .body' } },
 )
 
