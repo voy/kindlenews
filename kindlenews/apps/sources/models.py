@@ -1,10 +1,13 @@
+from django.db import models
+
+# Create your models here.
 import os
 import logging
 import datetime
 
 import lxml.html
 from pyquery import PyQuery as pq
-from google.appengine.ext.webapp import template
+#from google.appengine.ext.webapp import template
 
 from kindlenews.filter import clean
 
