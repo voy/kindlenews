@@ -1,19 +1,14 @@
-from django.db import models
-
-# Create your models here.
 import os
 import logging
 import datetime
 
 import lxml.html
 from pyquery import PyQuery as pq
-#from google.appengine.ext.webapp import template
+from django.db import models
 
 from kindlenews.filter import clean
 
-
 log = logging.getLogger(__name__)
-
 
 DEFAULT_SELECTORS = {
     'stories': 'item',
@@ -21,22 +16,33 @@ DEFAULT_SELECTORS = {
     'teaser': 'description',
     'link': 'link',
     'content': None
+    
 }
 
 
-class NewsSource:
+class NewsSource(models.Model):
 
-    def __init__(self, name, url, selectors, name_verbose=None, filter=clean,
-            **config):
-        self.name = name
-        self.name_verbose = name_verbose
-        self.url = url
-        self.filter = filter
-        self.config = config
-        
-        self.selectors = DEFAULT_SELECTORS.copy()
-        self.selectors.update(selectors)
-        
+    name = models.CharField(max_length=255, verbose_name="Name", unique=True)
+    name_verbose = models.CharField(max_length=255, verbose_name="Verbose name")
+    url = models.URLField(max_length=255, verbose_name="URL sel.")
+    
+    # selectors
+    sel_stories = models.CharField(max_length=255, verbose_name="Stories",
+        default="item")
+    sel_title = models.CharField(max_length=255, verbose_name="Title",
+        default="title")
+    sel_teaser = models.CharField(max_length=255, verbose_name="Teaser",
+        default="description")
+    sel_link = models.CharField(max_length=255, verbose_name="Link",
+        default="link")
+    sel_content = models.CharField(max_length=255, verbose_name="Content")
+    
+    sel_continuations = models.CharField(max_length=255, blank=True, null=True,
+        default=None, verbose_name="Continuations")
+    
+    max_items = models.IntegerField(blank=True, null=True, default=None,
+        verbose_name="Max. items")
+
     def get_pq(self):
         return pq(url=self.url)
         
@@ -44,11 +50,10 @@ class NewsSource:
         log.info("Fetching '%s'." % self.name)
         d = self.get_pq()
              
-        max_items = self.config.get('max_items', None)
         items = []
         i = 0
         for article in d(self.selectors['stories']):
-            if i == max_items:
+            if i == self.max_items:
                 break
             article.make_links_absolute(base_url=self.url)
             item = self.get_item(article)
@@ -77,29 +82,33 @@ class NewsSource:
                 
         item['content'] = self.get_content(item)
         
-        continuations = self.config.get('continuations', None)
-        if continuations:
-            continuations = continuations(article) or []
+        if self.continuations:
+            continuations = pg(article).find(self.continuations)
             for link in continuations:
                 url = link.get("href")
-                logging.debug("Fetching part %s of %s." %
-                        (link.text(), len(continuations)))
+                logging.debug("Fetching part %s of %s." % (link.text(), len(continuations)))
                 item['content'] += self.get_content(item)
         
         return item
             
     def get_content(self, item):
-        elm = pq(url=item['link']).find(self.selectors['content'])
+        elm = pq(url=item['link']).find(self.sel_content)
         content = self.filter(elm.html())
         return content
             
-    def render(self, items):
+    def get_context(self, items):
         template_values = {
             'name': self.name,
             'name_verbose': self.name_verbose,
             'items': items,
             'today': datetime.date.today()
         }
-        path = os.path.join(os.path.dirname(__file__), 'templates', 'book.html')
-        print template.render(path, template_values)
-
+        return context
+        
+    def __unicode__(self):
+    	return self.name_verbose
+        
+    class Meta:
+        verbose_name = 'Source'
+        verbose_name_plural = 'Sources'
+        

@@ -1,0 +1,50 @@
+[
+    {
+        "pk": 1, 
+        "model": "sources.newssource", 
+        "fields": {
+            "sel_continuations": "", 
+            "name": "zdrojak", 
+            "url": "http://www.zdrojak.cz/rss/clanky/", 
+            "sel_title": "title", 
+            "sel_link": "link", 
+            "sel_stories": "item", 
+            "max_items": null, 
+            "sel_content": "#main .urs", 
+            "sel_teaser": "description", 
+            "name_verbose": "Zdroj\u00e1k"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "sources.newssource", 
+        "fields": {
+            "sel_continuations": "", 
+            "name": "smartmania", 
+            "url": "http://smartmania.cz/rss.php", 
+            "sel_title": "title", 
+            "sel_link": "link", 
+            "sel_stories": "item", 
+            "max_items": null, 
+            "sel_content": "#article-text", 
+            "sel_teaser": "description", 
+            "name_verbose": "SmartMania"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "sources.newssource", 
+        "fields": {
+            "sel_continuations": ".pager li a", 
+            "name": "arstechnica", 
+            "url": "http://arstechnica.com/", 
+            "sel_title": "h2", 
+            "sel_link": ".read-more-link a", 
+            "sel_stories": "#all-stories .story", 
+            "max_items": 10, 
+            "sel_content": "#story .body", 
+            "sel_teaser": ".teaser", 
+            "name_verbose": "arstechnica"
+        }
+    }
+]

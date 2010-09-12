@@ -1,10 +1,11 @@
 from django.contrib import admin
-from kindlenews.apps.sources.models import Source
+
+from kindlenews.apps.sources.models import NewsSource
 
 
 class SourceAdmin(admin.ModelAdmin):
     fieldsets = (
-        (None, {
+        ('Basic', {
             'fields': ('name', 'name_verbose', 'url', 'max_items')
         }),
         ('Selectors', {
@@ -13,5 +14,4 @@ class SourceAdmin(admin.ModelAdmin):
         }),
     )
     
-    
-admin.site.register(NewsSource)#, SourceAdmin)
+admin.site.register(NewsSource, SourceAdmin)
